@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/HRMS.cpp
+
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/employee.cpp
+
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/main.cpp
+iostream
+-
+string
+-
+map
+-
+vector
+-
+algorithm
+-
+
