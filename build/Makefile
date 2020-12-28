@@ -129,17 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HRMS
+# Target rules for targets named output
 
 # Build rule for target.
-HRMS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HRMS
-.PHONY : HRMS
+output: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 output
+.PHONY : output
 
 # fast build rule for target.
-HRMS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/build
-.PHONY : HRMS/fast
+output/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/build
+.PHONY : output/fast
 
 src/HRMS.obj: src/HRMS.cpp.obj
 
@@ -147,7 +147,7 @@ src/HRMS.obj: src/HRMS.cpp.obj
 
 # target to build an object file
 src/HRMS.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/HRMS.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/HRMS.cpp.obj
 .PHONY : src/HRMS.cpp.obj
 
 src/HRMS.i: src/HRMS.cpp.i
@@ -156,7 +156,7 @@ src/HRMS.i: src/HRMS.cpp.i
 
 # target to preprocess a source file
 src/HRMS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/HRMS.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/HRMS.cpp.i
 .PHONY : src/HRMS.cpp.i
 
 src/HRMS.s: src/HRMS.cpp.s
@@ -165,7 +165,7 @@ src/HRMS.s: src/HRMS.cpp.s
 
 # target to generate assembly for a file
 src/HRMS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/HRMS.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/HRMS.cpp.s
 .PHONY : src/HRMS.cpp.s
 
 src/employee.obj: src/employee.cpp.obj
@@ -174,7 +174,7 @@ src/employee.obj: src/employee.cpp.obj
 
 # target to build an object file
 src/employee.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/employee.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/employee.cpp.obj
 .PHONY : src/employee.cpp.obj
 
 src/employee.i: src/employee.cpp.i
@@ -183,7 +183,7 @@ src/employee.i: src/employee.cpp.i
 
 # target to preprocess a source file
 src/employee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/employee.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/employee.cpp.i
 .PHONY : src/employee.cpp.i
 
 src/employee.s: src/employee.cpp.s
@@ -192,7 +192,7 @@ src/employee.s: src/employee.cpp.s
 
 # target to generate assembly for a file
 src/employee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/employee.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/employee.cpp.s
 .PHONY : src/employee.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -201,7 +201,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -210,7 +210,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -219,7 +219,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HRMS.dir\build.make CMakeFiles/HRMS.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -230,7 +230,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... HRMS
+	@echo ... output
 	@echo ... src/HRMS.obj
 	@echo ... src/HRMS.i
 	@echo ... src/HRMS.s

@@ -1,5 +1,6 @@
-#include "employee.hpp"
-
+#include "../include/lab6/exceptions.hpp"
+#include "../include/lab6/employee.hpp"
+#include "../include/lab6/HRMS.hpp"
 Employee::Employee()
 {
 

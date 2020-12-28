@@ -1,21 +1,7 @@
-cmake_minimum_required(VERSION 2.8.9)
-project (HRMS)
-set (CMAKE_CXX_STANDARD 11)
-#set (CMAKE_GENERATOR "Unix Makefiles" CACHE INTERNAL "" FORCE) #build type
-#set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=lstdc++")	#compiler flags
-#set (CMAKE_C_COMPILER clang)					#set compiler for C
-#set (CMAKE_CXX_COMPILER clang++)				#set compiler for C++
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY .. )	#set destination of .exe files
+cmake_minimum_required(VERSION 3.0.0)
 
-file(GLOB SRC
-	"./src/*.c"
-	"./src/*.cpp"
-	"./src/*.hpp"
-	"./src/*.h"
+project(laboratorium3extension)
 
-	"./include/Lab6/*.hpp"
+include_directories(./include ./src)
 
-)
-
-add_executable(HRMS ${SRC})
-include_directories( ./include/HRMS )
+add_executable(output ./src/main.cpp ./src/HRMS.cpp ./src/employee.cpp)

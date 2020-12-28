@@ -4,7 +4,7 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/HRMS.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/output.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = 
 
