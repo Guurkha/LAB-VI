@@ -1,5 +1,6 @@
-#include "HRMS.hpp"
 
+#include "exceptions.hpp"
+#include "HRMS.hpp"
 
 void HMRS::add(Employee employee, string departmentid, double salary)
 {

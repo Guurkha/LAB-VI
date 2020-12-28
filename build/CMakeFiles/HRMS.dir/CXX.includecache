@@ -7,18 +7,16 @@
 #IncludeRegexTransform: 
 
 C:/Users/proco/cppprojects/lab6/LAB-VI/src/HRMS.cpp
+exceptions.hpp
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/exceptions.hpp
 
 C:/Users/proco/cppprojects/lab6/LAB-VI/src/employee.cpp
+employee.hpp
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/employee.hpp
 
 C:/Users/proco/cppprojects/lab6/LAB-VI/src/main.cpp
-iostream
--
-string
--
-map
--
-vector
--
-algorithm
--
+HRMS.hpp
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/HRMS.hpp
+employee.hpp
+C:/Users/proco/cppprojects/lab6/LAB-VI/src/employee.hpp
 
